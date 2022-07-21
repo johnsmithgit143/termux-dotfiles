@@ -30,7 +30,7 @@ alias \
 	diff="diff --color=auto" \
 
 cd() { builtin cd $@ && ls ; }
-cx() { file1=$1 ; file2=${file1%%.*} ; cat ~/storage/shared/Acode/$file1 > $file1 && clang -o $file2 $file1 && chmod +x $file2 && shift && ./$file2 $@ ; }
+cx() { file1=$1 ; file2=${file1%%.*} ; cat ~/storage/shared/Acode/$file1 > $file1 && clang -Weverything -o $file2 $file1 && chmod +x $file2 && shift && ./$file2 $@ ; }
 sx() { file=$1 ; cat ~/storage/shared/Acode/$file > $file && chmod +x $file && shift && ./$file $@ ; }
 lsc() { ls ~/storage/shared/Acode ; }
 mvc() { mv ~/storage/shared/Acode/$@ . ; }
