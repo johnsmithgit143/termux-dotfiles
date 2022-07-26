@@ -33,7 +33,7 @@ cd() { builtin cd $@ && ls ; }
 cx() { file1=$1 ; file2=${file1%%.*} ; clang -Weverything -o $file2 $file1 && chmod +x $file2 && shift && ./$file2 $@ ; }
 sx() { file=$1 ; chmod +x $file && shift && ./$file $@ ; }
 
+neofetch
+
 source /data/data/com.termux/files/usr/etc/zplugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /data/data/com.termux/files/usr/etc/zplugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-neofetch
