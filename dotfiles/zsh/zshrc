@@ -34,6 +34,7 @@ cx() { file1=$1 ; file2=${file1%%.*} ; clang -Weverything -o $file2 $file1 && ch
 sx() { file=$1 ; chmod +x $file && shift && ./$file $@ ; }
 
 neofetch
+termux-login
 
 source /data/data/com.termux/files/usr/etc/zplugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /data/data/com.termux/files/usr/etc/zplugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
