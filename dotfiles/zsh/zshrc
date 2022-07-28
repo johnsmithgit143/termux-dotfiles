@@ -33,7 +33,7 @@ cd() { builtin cd $@ && ls ; }
 cx() { file1=$1 ; file2=${file1%%.*} ; clang -Weverything -o $file2 $file1 && chmod +x $file2 && shift && ./$file2 $@ ; }
 sx() { file=$1 ; chmod +x $file && shift && ./$file $@ ; }
 
-until fortune | cowthink -rW 63 2>/dev/null
+until fortune | cowsay -rW 63 2>/dev/null
 echo
 termux-login
 
