@@ -1,4 +1,0 @@
-until fortune | cowsay -rW 63 2>/dev/null
-echo
-termux-login
-
