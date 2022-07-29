@@ -16,6 +16,7 @@ SAVEHIST=100000
 HISTFILE=/data/data/com.termux/files/home/.zhistory
 
 export LESSHISTFILE=-
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 
 alias \
 	cp="cp -iv" \
